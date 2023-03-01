@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Inicio de tudo</title>
+
+    <style>
+        body { background-color: rgb(86, 145, 145);
+        color: rgb(241, 161, 224);
+        font: normal 20pt Arial;}
+        h1 {color: rgb(206, 206, 126);} 
+        
+    </style>
+</head>
+<body>
+
+    <h1>Aprendendo a usar DOM e Console</h1>
+    <p>Yanira</p>
+
+    <p> Aprendendo a usar o <strong>DOM</strong>  em Javascript </p>
+
+    <script>
+        var corpo = document.body
+        corpo.style.backgroundColor = 'gray'
+        
+        var titulo = document.querySelector('h1')
+        console.log(titulo.textContent)
+        titulo.style.color = 'white'
+
+        var p1 = document.getElementsByTagName('p')[0]
+        window.document.write("está escrito dessa forma o nome da " + p1.innerText)
+        p1.style.color = "red"
+    </script>
+
+ 
+</body>
+</html>
